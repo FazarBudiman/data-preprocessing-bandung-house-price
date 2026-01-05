@@ -117,7 +117,7 @@ def preprocess_data(data, target_column, save_dir="bandung-house-price-preproces
     return X_train, X_test, y_train, y_test
 
 if __name__ == "__main__":
-    data = pd.read_csv("bandung-house-price.csv")
+    data = pd.read_csv("../bandung-house-price.csv")
 
     X_train, X_test, y_train, y_test = preprocess_data(
         data=data,

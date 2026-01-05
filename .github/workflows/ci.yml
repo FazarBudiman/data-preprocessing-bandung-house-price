@@ -36,8 +36,6 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-          git add preprocessing/bandung-house-price-preprocessing
-          git add preprocessor.joblib
-
+          git add .
           git commit -m "ci: generate preprocessing artifacts" || echo "No changes"
-          git push
+          git push -u origin main
